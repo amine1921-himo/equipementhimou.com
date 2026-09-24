@@ -1,2 +1,2 @@
-# equipementhimou.com
+# equipement-himou
 متجر إلكتروني لبيع اللوازم و الأدوات الرياضية
