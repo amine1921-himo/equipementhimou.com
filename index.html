@@ -3,28 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Équipement Himou</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .category {
+      background: white;
+      padding: 35px 20px;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+    }
+
+    .category .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .category h3 {
+      font-size: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Équipement Himou</h1>
+  <header>
+    <h1>Équipement Himou</h1>
+    <p>Votre équipement sportif</p>
+  </header>
 
-  <h2>Bienvenue dans notre magasin de sport</h2>
+  <div class="container">
 
-  <p>
-    Vêtements sportifs • Chaussures • Équipements sportifs
-  </p>
+    <h2>Nos catégories</h2>
 
-  <h2>Nos produits</h2>
+    <div class="categories">
 
-  <p>Maillots de football</p>
-  <p>Chaussures de sport</p>
-  <p>Équipements sportifs</p>
+      <a href="#" class="category">
+        <div class="icon">🏊</div>
+        <h3>Natation</h3>
+      </a>
 
-  <h2>Contact</h2>
+      <a href="#" class="category">
+        <div class="icon">⚽</div>
+        <h3>Football</h3>
+      </a>
 
-  <p>Contactez-nous pour plus d'informations.</p>
+      <a href="#" class="category">
+        <div class="icon">🥊</div>
+        <h3>Sports de combat</h3>
+      </a>
+
+      <a href="#" class="category">
+        <div class="icon">🏋️</div>
+        <h3>Musculation</h3>
+      </a>
+
+      <a href="#" class="category">
+        <div class="icon">🏃</div>
+        <h3>Autres sports</h3>
+      </a>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Équipement Himou - Tous droits réservés</p>
+  </footer>
 
 </body>
 </html>
