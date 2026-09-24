@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WIN SPORT - Fitness</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        header {
+            background: #22c55e;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+        }
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #166534;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffffff, #dcfce7);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 19px;
+        }
+
+        .products {
+            padding: 60px 7%;
+        }
+
+        .products h2 {
+            text-align: center;
+            color: #16a34a;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            border: 2px solid #dcfce7;
+            border-radius: 16px;
+            padding: 35px 20px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-7px);
+            border-color: #22c55e;
+            box-shadow: 0 10px 25px rgba(34,197,94,0.20);
+        }
+
+        .product-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .back {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back a {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back a:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #22c55e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            WIN SPORT
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="football.html">Football</a>
+            <a href="natation.html">Natation</a>
+            <a href="sport-combat.html">Sport Combat</a>
+            <a href="fitness.html">Fitness</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>🏋️ Fitness</h1>
+
+        <p>
+            Tout l'équipement nécessaire pour le fitness et la musculation.
+        </p>
+
+    </section>
+
+    <section class="products">
+
+        <h2>Équipement Fitness</h2>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <div class="product-icon">🏋️</div>
+                <h3>Haltères</h3>
+                <p>
+                    Haltères adaptés à l'entraînement et au renforcement musculaire.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🏋️‍♂️</div>
+                <h3>Barres & disques</h3>
+                <p>
+                    Barres et disques pour la musculation et l'entraînement de force.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🧘</div>
+                <h3>Tapis de sol</h3>
+                <p>
+                    Tapis confortables pour les exercices au sol et les séances de fitness.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🪢</div>
+                <h3>Cordes à sauter</h3>
+                <p>
+                    Cordes à sauter pour le cardio, l'échauffement et l'entraînement.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">💪</div>
+                <h3>Élastiques & accessoires</h3>
+                <p>
+                    Élastiques et accessoires pratiques pour différents exercices.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🎒</div>
+                <h3>Autres équipements</h3>
+                <p>
+                    Équipements et accessoires utiles pour vos séances de fitness.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="back">
+
+        <a href="index.html">
+            ← Retour à l'accueil
+        </a>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 WIN SPORT — Tous droits réservés.
+        </p>
+
+    </footer>
+
+</body>
+</html>
