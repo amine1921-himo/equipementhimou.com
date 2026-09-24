@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WIN SPORT - Sport Combat</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        header {
+            background: #ef4444;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+        }
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #7f1d1d;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffffff, #fee2e2);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #dc2626;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 19px;
+        }
+
+        .products {
+            padding: 60px 7%;
+        }
+
+        .products h2 {
+            text-align: center;
+            color: #dc2626;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            border: 2px solid #fee2e2;
+            border-radius: 16px;
+            padding: 35px 20px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-7px);
+            border-color: #ef4444;
+            box-shadow: 0 10px 25px rgba(239,68,68,0.20);
+        }
+
+        .product-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .back {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back a {
+            display: inline-block;
+            background: #ef4444;
+            color: white;
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back a:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #ef4444;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            WIN SPORT
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="football.html">Football</a>
+            <a href="natation.html">Natation</a>
+            <a href="sport-combat.html">Sport Combat</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>🥊 Sport Combat</h1>
+
+        <p>
+            Tout l'équipement nécessaire pour les passionnés de sports de combat.
+        </p>
+
+    </section>
+
+    <section class="products">
+
+        <h2>Équipement Sport Combat</h2>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <div class="product-icon">🥊</div>
+                <h3>Gants de boxe</h3>
+                <p>
+                    Gants adaptés à la boxe, à l'entraînement et aux sports de combat.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🩹</div>
+                <h3>Bandages</h3>
+                <p>
+                    Bandages pour protéger les mains et les poignets pendant l'entraînement.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🦵</div>
+                <h3>Protège-tibias</h3>
+                <p>
+                    Protège-tibias adaptés aux entraînements et aux sports de combat.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🥋</div>
+                <h3>Tenues de combat</h3>
+                <p>
+                    Tenues adaptées à la pratique des différents sports de combat.
+                </p>
+            </div>
+
+            <div class="product">
+                <div class="product-icon">🎯</div>
+                <h3>Accessoires</h3>
+                <p>
+                    Accessoires indispensables pour l'entraînement et la pratique sportive.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="back">
+
+        <a href="index.html">
+            ← Retour à l'accueil
+        </a>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 WIN SPORT — Tous droits réservés.
+        </p>
+
+    </footer>
+
+</body>
+</html>
