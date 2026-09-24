@@ -16,148 +16,173 @@
 
         body {
             background: #ffffff;
-            color: #222;
+            color: #1e293b;
         }
 
         /* HEADER */
         header {
             background: #38bdf8;
-            color: white;
-            padding: 18px 6%;
+            padding: 20px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
         }
 
         .logo {
-            font-size: 28px;
+            color: #ffffff;
+            font-size: 30px;
             font-weight: 900;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         nav {
             display: flex;
-            gap: 28px;
+            gap: 25px;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #0f172a;
+            color: #075985;
         }
 
         /* HERO */
         .hero {
-            min-height: 520px;
+            min-height: 430px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 40px 20px;
+
             background: linear-gradient(
                 135deg,
-                #ffffff 0%,
-                #e0f7ff 100%
+                #ffffff,
+                #e0f7ff
             );
         }
 
         .hero h1 {
-            font-size: 55px;
             color: #0284c7;
+            font-size: 58px;
+            font-weight: 900;
             margin-bottom: 15px;
         }
 
         .hero p {
-            font-size: 20px;
             color: #475569;
+            font-size: 20px;
             margin-bottom: 30px;
         }
 
-        .btn {
+        .hero-button {
             display: inline-block;
-            padding: 14px 30px;
             background: #38bdf8;
-            color: white;
+            color: #ffffff;
             text-decoration: none;
+            padding: 14px 32px;
             border-radius: 8px;
             font-weight: bold;
             transition: 0.3s;
         }
 
-        .btn:hover {
+        .hero-button:hover {
             background: #0284c7;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
-        /* CATEGORIES */
-        .categories {
-            padding: 70px 6%;
+        /* SPORTS */
+        .sports {
+            padding: 70px 7%;
+        }
+
+        .sports-title {
             text-align: center;
+            margin-bottom: 45px;
         }
 
-        .categories h2 {
-            font-size: 34px;
-            margin-bottom: 40px;
-            color: #0f172a;
+        .sports-title h2 {
+            font-size: 36px;
+            color: #0284c7;
+            margin-bottom: 10px;
         }
 
-        .cards {
+        .sports-title p {
+            color: #64748b;
+        }
+
+        .sports-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        .card {
-            padding: 40px 20px;
-            border-radius: 15px;
-            background: white;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        .sport-card {
+            background: #ffffff;
+            border: 2px solid #e0f2fe;
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
             transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-7px);
+        .sport-card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.20);
         }
 
-        .card h3 {
+        .sport-icon {
+            font-size: 55px;
+            margin-bottom: 18px;
+        }
+
+        .sport-card h3 {
             color: #0284c7;
+            font-size: 22px;
             margin-bottom: 10px;
+        }
+
+        .sport-card p {
+            color: #64748b;
+            line-height: 1.6;
         }
 
         /* FOOTER */
         footer {
-            background: #0f172a;
-            color: white;
+            background: #38bdf8;
+            color: #ffffff;
             text-align: center;
             padding: 25px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
         /* MOBILE */
-        @media (max-width: 768px) {
+        @media (max-width: 800px) {
 
             header {
                 flex-direction: column;
-                gap: 15px;
+                gap: 18px;
             }
 
             nav {
-                gap: 15px;
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 15px;
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 42px;
             }
 
-            .cards {
+            .sports-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -166,53 +191,146 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <div class="logo">WIN SPORT</div>
+
+        <div class="logo">
+            WIN SPORT
+        </div>
 
         <nav>
             <a href="index.html">Accueil</a>
-            <a href="football.html">Football</a>
-            <a href="#">Vêtements</a>
-            <a href="#">Chaussures</a>
-            <a href="#">Accessoires</a>
+            <a href="#sports">Sports</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
+
+    <!-- HERO -->
     <section class="hero">
+
         <div>
+
             <h1>WIN SPORT</h1>
-            <p>Tout pour les passionnés du sport.</p>
-            <a href="#categories" class="btn">Découvrir</a>
-        </div>
-    </section>
 
-    <section class="categories" id="categories">
+            <p>
+                Tout pour les passionnés du sport.
+            </p>
 
-        <h2>Nos catégories</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>⚽ Football</h3>
-                <p>Équipements et articles de football.</p>
-            </div>
-
-            <div class="card">
-                <h3>👕 Vêtements</h3>
-                <p>Tenues sportives pour tous.</p>
-            </div>
-
-            <div class="card">
-                <h3>👟 Chaussures</h3>
-                <p>Chaussures adaptées à votre sport.</p>
-            </div>
+            <a href="#sports" class="hero-button">
+                Découvrir nos sports
+            </a>
 
         </div>
 
     </section>
 
-    <footer>
-        <p>© 2026 WIN SPORT — Tous droits réservés.</p>
+
+    <!-- SPORTS -->
+    <section class="sports" id="sports">
+
+        <div class="sports-title">
+
+            <h2>Nos catégories</h2>
+
+            <p>
+                Découvrez nos équipements et articles sportifs.
+            </p>
+
+        </div>
+
+
+        <div class="sports-grid">
+
+
+            <!-- FOOTBALL -->
+            <div class="sport-card">
+
+                <div class="sport-icon">⚽</div>
+
+                <h3>Football</h3>
+
+                <p>
+                    Équipements, tenues et accessoires
+                    pour les passionnés du football.
+                </p>
+
+            </div>
+
+
+            <!-- NATATION -->
+            <div class="sport-card">
+
+                <div class="sport-icon">🏊</div>
+
+                <h3>Natation</h3>
+
+                <p>
+                    Équipements et accessoires
+                    dédiés à la natation.
+                </p>
+
+            </div>
+
+
+            <!-- SPORTS DE COMBAT -->
+            <div class="sport-card">
+
+                <div class="sport-icon">🥊</div>
+
+                <h3>Sports de combat</h3>
+
+                <p>
+                    Équipements pour la boxe,
+                    arts martiaux et sports de combat.
+                </p>
+
+            </div>
+
+
+            <!-- FITNESS -->
+            <div class="sport-card">
+
+                <div class="sport-icon">🏋️</div>
+
+                <h3>Fitness</h3>
+
+                <p>
+                    Matériel et accessoires
+                    pour la musculation et le fitness.
+                </p>
+
+            </div>
+
+
+            <!-- DIVERS -->
+            <div class="sport-card">
+
+                <div class="sport-icon">🛍️</div>
+
+                <h3>Matériel sportif divers</h3>
+
+                <p>
+                    Une sélection d'articles et
+                    d'accessoires pour différents sports.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <p>
+            © 2026 WIN SPORT — Tous droits réservés.
+        </p>
+
     </footer>
 
 </body>
