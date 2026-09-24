@@ -3,20 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>WIN SPORT</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #38bdf8;
+            color: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0f172a;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #e0f7ff 100%
+            );
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #0284c7;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #38bdf8;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+            transform: translateY(-2px);
+        }
+
+        /* CATEGORIES */
+        .categories {
+            padding: 70px 6%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 34px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 40px 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>WIN SPORT</h1>
-        <p>Équipement sportif</p>
+        <div class="logo">WIN SPORT</div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="football.html">Football</a>
+            <a href="#">Vêtements</a>
+            <a href="#">Chaussures</a>
+            <a href="#">Accessoires</a>
+        </nav>
     </header>
 
-    <main>
-        <h2>Bienvenue chez WIN SPORT</h2>
-        <p>Tout pour les passionnés du sport.</p>
-    </main>
+    <section class="hero">
+        <div>
+            <h1>WIN SPORT</h1>
+            <p>Tout pour les passionnés du sport.</p>
+            <a href="#categories" class="btn">Découvrir</a>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+
+        <h2>Nos catégories</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>⚽ Football</h3>
+                <p>Équipements et articles de football.</p>
+            </div>
+
+            <div class="card">
+                <h3>👕 Vêtements</h3>
+                <p>Tenues sportives pour tous.</p>
+            </div>
+
+            <div class="card">
+                <h3>👟 Chaussures</h3>
+                <p>Chaussures adaptées à votre sport.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 WIN SPORT — Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
