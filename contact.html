@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIN SPORT - Contact</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0066cc, #00bcd4);
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .hero h2 {
+            color: #0066cc;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 20px auto 50px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .contact-card p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .phone-btn {
+            background: #0066cc;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .back {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 40px;
+            padding: 12px 22px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>WIN SPORT</h1>
+    <p>Votre équipement sportif</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="football.html">Football</a>
+    <a href="natation.html">Natation</a>
+    <a href="sport-combat.html">Sport Combat</a>
+    <a href="fitness.html">Fitness</a>
+    <a href="divers.html">Divers</a>
+</nav>
+
+<section class="hero">
+    <h2>📞 Contactez-nous</h2>
+    <p>Pour toute information ou commande, contactez-nous directement.</p>
+</section>
+
+<section class="contact-container">
+
+    <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Téléphone</h3>
+        <p>0770 33 57 74</p>
+
+        <a href="tel:0770335774" class="contact-btn phone-btn">
+            Appeler
+        </a>
+    </div>
+
+    <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>0770 33 57 74</p>
+
+        <a href="https://wa.me/213770335774" class="contact-btn whatsapp-btn" target="_blank">
+            WhatsApp
+        </a>
+    </div>
+
+</section>
+
+<a href="index.html" class="back">← Retour à l'accueil</a>
+
+<footer>
+    <p>© 2026 WIN SPORT - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
