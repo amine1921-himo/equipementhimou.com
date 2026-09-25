@@ -3,40 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballons | win sport</title>
+    <title>Ballons - WIN Sport</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .ballons-page {
+            padding: 30px 20px;
+        }
+
+        .ballons-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ballons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .ballon-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .ballon-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .ballon-card h2 {
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: #111;
+            color: white;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>⚽ Ballons</h1>
-        <a href="index.html">← Retour à l'accueil</a>
-    </header>
+    <div class="ballons-page">
 
-    <main class="products">
+        <a class="back-btn" href="index.html">
+            ← Retour à l'accueil
+        </a>
 
-        <!-- Select -->
-        <div class="product-card">
-            <img src="select.jpg" alt="Ballon Select">
-            <h2>Ballon Select</h2>
-            <p class="price">3200 DA</p>
-            <a class="order-btn" href="https://wa.me/213770335774?text=Bonjour%20je%20suis%20intéressé%20par%20le%20ballon%20Select%20à%203200%20DA">
-                Commander
-            </a>
+        <h1 class="ballons-title">⚽ Nos Ballons</h1>
+
+        <div class="ballons-grid">
+
+            <!-- Ballon Select -->
+            <div class="ballon-card">
+                <img src="Select.jpg" alt="Ballon Select">
+                <h2>Select</h2>
+                <p class="price">3200 DA</p>
+
+                <a class="order-btn"
+                   href="https://wa.me/213770335774?text=Bonjour%20je%20suis%20intéressé%20par%20le%20ballon%20Select%20à%203200%20DA">
+                    Commander
+                </a>
+            </div>
+
+            <!-- Ballon Hummel -->
+            <div class="ballon-card">
+                <img src="Hummel.jpg" alt="Ballon Hummel">
+                <h2>Hummel</h2>
+                <p class="price">5500 DA</p>
+
+                <a class="order-btn"
+                   href="https://wa.me/213770335774?text=Bonjour%20je%20suis%20intéressé%20par%20le%20ballon%20Hummel%20à%205500%20DA">
+                    Commander
+                </a>
+            </div>
+
         </div>
 
-        <!-- Homal -->
-        <div class="product-card">
-            <img src="hummel.jpg" alt="Ballon Hummel">
-            <h2>Ballon Hummel</h2>
-            <p class="price">5500 DA</p>
-            <a class="order-btn" href="https://wa.me/213770335774?text=Bonjour%20je%20suis%20intéressé%20par%20le%20ballon%20Homal%20à%205500%20DA">
-                Commander
-            </a>
-        </div>
-
-    </main>
+    </div>
 
 </body>
 </html>
