@@ -122,6 +122,39 @@
             font-size: 22px;
             font-weight: bold;
             color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .order-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .order-buttons a {
+            display: block;
+            padding: 13px;
+            border-radius: 9px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #1ebe5d;
+        }
+
+        .messenger {
+            background: #0084FF;
+        }
+
+        .messenger:hover {
+            background: #006fda;
         }
 
         .back {
@@ -137,10 +170,6 @@
             padding: 13px 28px;
             border-radius: 9px;
             font-weight: bold;
-        }
-
-        .back a:hover {
-            background: #0284c7;
         }
 
         footer {
@@ -181,89 +210,125 @@
 
 <body>
 
-    <header>
+<header>
 
-        <div class="logo">
-            WIN SPORT
-        </div>
+    <div class="logo">
+        WIN SPORT
+    </div>
 
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="football.html">Football</a>
-        </nav>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="football.html">Football</a>
+    </nav>
 
-    </header>
-
-
-    <section class="hero">
-
-        <h1>⚽ Ballons</h1>
-
-        <p>
-            Découvrez notre sélection de ballons de football.
-        </p>
-
-    </section>
+</header>
 
 
-    <section class="products">
+<section class="hero">
 
-        <h2>Nos Ballons</h2>
+    <h1>⚽ Ballons</h1>
 
-        <div class="product-grid">
+    <p>
+        Découvrez notre sélection de ballons de football.
+    </p>
+
+</section>
 
 
-            <!-- BALLON SELECT -->
+<section class="products">
 
-            <div class="product">
+    <h2>Nos Ballons</h2>
 
-                <img src="select.jpg" alt="Ballon Select">
+    <div class="product-grid">
 
-                <h3>Ballon Select</h3>
 
-                <p class="price">
-                    3200 DA
-                </p>
+        <!-- BALLON SELECT -->
+
+        <div class="product">
+
+            <img src="select.jpg" alt="Ballon Select">
+
+            <h3>Ballon Select</h3>
+
+            <p class="price">
+                3200 DA
+            </p>
+
+            <div class="order-buttons">
+
+                <a
+                    class="whatsapp"
+                    href="https://wa.me/213770335774?text=Bonjour%20WIN%20Sport%2C%20je%20veux%20commander%20le%20Ballon%20Select%20%C3%A0%203200%20DA."
+                    target="_blank">
+                    🟢 Commander sur WhatsApp
+                </a>
+
+                <a
+                    class="messenger"
+                    href="https://www.facebook.com/share/1aoSJNXsfF/?mibextid=wwXIfr"
+                    target="_blank">
+                    🔵 Commander sur Messenger
+                </a>
 
             </div>
 
+        </div>
 
-            <!-- BALLON HUMMEL -->
 
-            <div class="product">
+        <!-- BALLON HUMMEL -->
 
-                <img src="hummel.jpg" alt="Ballon Hummel">
+        <div class="product">
 
-                <h3>Ballon Hummel</h3>
+            <img src="hummel.jpg" alt="Ballon Hummel">
 
-                <p class="price">
-                    5500 DA
-                </p>
+            <h3>Ballon Hummel</h3>
+
+            <p class="price">
+                5500 DA
+            </p>
+
+            <div class="order-buttons">
+
+                <a
+                    class="whatsapp"
+                    href="https://wa.me/213770335774?text=Bonjour%20WIN%20Sport%2C%20je%20veux%20commander%20le%20Ballon%20Hummel%20%C3%A0%205500%20DA."
+                    target="_blank">
+                    🟢 Commander sur WhatsApp
+                </a>
+
+                <a
+                    class="messenger"
+                    href="https://www.facebook.com/share/1aoSJNXsfF/?mibextid=wwXIfr"
+                    target="_blank">
+                    🔵 Commander sur Messenger
+                </a>
 
             </div>
 
-
         </div>
 
-    </section>
-
-
-    <div class="back">
-
-        <a href="football.html">
-            ← Retour au Football
-        </a>
 
     </div>
 
+</section>
 
-    <footer>
 
-        <p>
-            © 2026 WIN SPORT — Tous droits réservés.
-        </p>
+<div class="back">
 
-    </footer>
+    <a href="football.html">
+        ← Retour au Football
+    </a>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 WIN SPORT — Tous droits réservés.
+    </p>
+
+</footer>
 
 </body>
 
