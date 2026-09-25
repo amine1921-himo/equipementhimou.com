@@ -122,23 +122,27 @@
             font-size: 22px;
             font-weight: bold;
             color: #0f172a;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
+
+        /* أزرار الطلب */
 
         .order-buttons {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: center;
+            gap: 8px;
         }
 
         .order-buttons a {
-            display: block;
-            padding: 13px;
-            border-radius: 9px;
+            display: inline-block;
+            padding: 8px 10px;
+            border-radius: 7px;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 13px;
             transition: 0.2s;
+            flex: 1;
         }
 
         .whatsapp {
@@ -196,12 +200,35 @@
             }
 
             .product-grid {
-                grid-template-columns: repeat( 2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .product {
+                padding: 12px;
             }
 
             .product img {
-                height: 280px;
+                height: 220px;
             }
+
+            .product h3 {
+                font-size: 18px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+
+            .order-buttons {
+                gap: 5px;
+            }
+
+            .order-buttons a {
+                padding: 7px 5px;
+                font-size: 11px;
+            }
+
         }
 
     </style>
@@ -260,14 +287,14 @@
                     class="whatsapp"
                     href="https://wa.me/213770335774?text=Bonjour%20WIN%20Sport%2C%20je%20veux%20commander%20le%20Ballon%20Select%20%C3%A0%203200%20DA."
                     target="_blank">
-                    🟢 Commander sur WhatsApp
+                    🟢 WhatsApp
                 </a>
 
                 <a
                     class="messenger"
-                    href="https://www.facebook.com/share/1aoSJNXsfF/?mibextid=wwXIfr"
+                    href="https://m.me/100076120771882"
                     target="_blank">
-                    🔵 Commander sur Messenger
+                    🔵 Messenger
                 </a>
 
             </div>
@@ -293,14 +320,14 @@
                     class="whatsapp"
                     href="https://wa.me/213770335774?text=Bonjour%20WIN%20Sport%2C%20je%20veux%20commander%20le%20Ballon%20Hummel%20%C3%A0%205500%20DA."
                     target="_blank">
-                    🟢 Commander sur WhatsApp
+                    🟢 WhatsApp
                 </a>
 
                 <a
                     class="messenger"
-                    href="https://www.facebook.com/share/1aoSJNXsfF/?mibextid=wwXIfr"
+                    href="https://m.me/100076120771882"
                     target="_blank">
-                    🔵 Commander sur Messenger
+                    🔵 Messenger
                 </a>
 
             </div>
