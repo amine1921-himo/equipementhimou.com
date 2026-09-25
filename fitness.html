@@ -84,38 +84,20 @@
             gap: 25px;
         }
 
-        .product,
         .product-card {
             border: 2px solid #dcfce7;
             border-radius: 16px;
-            padding: 25px 20px;
+            padding: 20px;
             text-align: center;
             background: white;
             box-shadow: 0 5px 18px rgba(0,0,0,0.06);
             transition: 0.3s;
         }
 
-        .product:hover,
         .product-card:hover {
             transform: translateY(-7px);
             border-color: #22c55e;
             box-shadow: 0 10px 25px rgba(34,197,94,0.20);
-        }
-
-        .product-icon {
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
-
-        .product h3,
-        .product-card h3 {
-            color: #16a34a;
-            margin-bottom: 10px;
-        }
-
-        .product p {
-            color: #64748b;
-            line-height: 1.6;
         }
 
         .product-card img {
@@ -126,17 +108,16 @@
             margin-bottom: 15px;
         }
 
-        .product-card .price {
+        .product-card h3 {
+            color: #16a34a;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .price {
             color: #16a34a;
             font-size: 22px;
             font-weight: bold;
-        }
-
-        .section-title {
-            text-align: center;
-            color: #16a34a;
-            font-size: 35px;
-            margin: 60px 0 40px;
         }
 
         .back {
@@ -185,7 +166,24 @@
             }
 
             .product-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .product-card {
+                padding: 12px;
+            }
+
+            .product-card img {
+                height: 170px;
+            }
+
+            .product-card h3 {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 18px;
             }
         }
     </style>
@@ -219,16 +217,13 @@
 
     </section>
 
-    <!-- ÉQUIPEMENT FITNESS -->
-
     <section class="products">
 
-        <h2>Équipement Fitness</h2>
+        <h2>Elastic & Accessories</h2>
 
         <div class="product-grid">
 
-    </section>
-
+            <div class="product-card">
                 <img src="hand rip 40kg.jpg" alt="Hand Grip 40KG">
                 <h3>Hand Grip 40KG</h3>
                 <p class="price">1200 DA</p>
@@ -239,6 +234,10 @@
                 <h3>Hand Grip Simple</h3>
                 <p class="price">600 DA</p>
             </div>
+
+            <!-- نزيدو المنتجات الجاية هنا -->
+
+        </div>
 
     </section>
 
