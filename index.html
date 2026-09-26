@@ -22,7 +22,7 @@
         /* HEADER */
         header {
             background: #38bdf8;
-            padding: 20px 7%;
+            padding: 16px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -38,6 +38,7 @@
 
         nav {
             display: flex;
+            align-items: center;
             gap: 25px;
         }
 
@@ -52,6 +53,76 @@
             color: #075985;
         }
 
+        /* CONTACT */
+        .contact-link {
+            padding: 7px 14px;
+            border: 1px solid rgba(255,255,255,0.8);
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        /* SEARCH */
+        .search-box {
+            text-align: center;
+            padding: 25px 20px;
+            background: #ffffff;
+        }
+
+        .search-box input {
+            width: 90%;
+            max-width: 520px;
+            padding: 13px 18px;
+            border: 2px solid #bae6fd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-box input:focus {
+            border-color: #38bdf8;
+        }
+
+        /* SEARCH RESULTS */
+        .search-results {
+            width: 90%;
+            max-width: 520px;
+            margin: 0 auto;
+            display: none;
+            background: #ffffff;
+            border: 1px solid #e0f2fe;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .search-result {
+            display: block;
+            padding: 14px 18px;
+            color: #1e293b;
+            text-decoration: none;
+            border-bottom: 1px solid #e0f2fe;
+        }
+
+        .search-result:last-child {
+            border-bottom: none;
+        }
+
+        .search-result:hover {
+            background: #e0f7ff;
+        }
+
+        .result-name {
+            color: #0284c7;
+            font-weight: bold;
+        }
+
+        .result-category {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
         /* HERO */
         .hero {
             min-height: 430px;
@@ -61,22 +132,27 @@
             text-align: center;
             padding: 40px 20px;
 
-            background: linear-gradient(
-                135deg,
-                #ffffff,
-                #e0f7ff
-            );
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.42),
+                    rgba(0, 0, 0, 0.42)
+                ),
+                url("hero.jpg");
+
+            background-size: cover;
+            background-position: center;
         }
 
         .hero h1 {
-            color: #0284c7;
+            color: #ffffff;
             font-size: 58px;
             font-weight: 900;
             margin-bottom: 15px;
+            letter-spacing: 3px;
         }
 
         .hero p {
-            color: #475569;
+            color: #ffffff;
             font-size: 20px;
             margin-bottom: 30px;
         }
@@ -131,6 +207,9 @@
             text-align: center;
             box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
             transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .sport-card:hover {
@@ -150,19 +229,6 @@
             margin-bottom: 10px;
         }
 
-        .sport-card {
-    background: #ffffff;
-    border: 2px solid #e0f2fe;
-    border-radius: 16px;
-    padding: 35px 25px;
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
-    transition: 0.3s;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
         /* FOOTER */
         footer {
             background: #38bdf8;
@@ -177,7 +243,7 @@
 
             header {
                 flex-direction: column;
-                gap: 18px;
+                gap: 15px;
             }
 
             nav {
@@ -186,8 +252,20 @@
                 gap: 15px;
             }
 
+            .logo {
+                font-size: 27px;
+            }
+
+            .hero {
+                min-height: 380px;
+            }
+
             .hero h1 {
                 font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 18px;
             }
 
             .sports-grid {
@@ -209,14 +287,25 @@
         <nav>
             <a href="index.html">Accueil</a>
             <a href="#sports">Sports</a>
-            <a href="contact.html" class="sport-card">
-    <div class="sport-icon">📞</div>
-    <h3>Contact</h3>
-    <p>Contactez-nous par téléphone ou WhatsApp.</p>
-</a>
+            <a href="contact.html" class="contact-link">📞 Contact</a>
         </nav>
 
     </header>
+
+
+    <!-- SEARCH -->
+    <section class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔎 Rechercher un article..."
+            autocomplete="off"
+        >
+
+        <div class="search-results" id="searchResults"></div>
+
+    </section>
 
 
     <!-- HERO -->
@@ -255,60 +344,66 @@
 
         <div class="sports-grid">
 
-
             <!-- FOOTBALL -->
             <a href="football.html" class="sport-card">
-
                 <div class="sport-icon">⚽</div>
-
                 <h3>Football</h3>
-
                 <p>
                     Équipements, tenues et accessoires
                     pour les passionnés du football.
                 </p>
-
             </a>
 
 
             <!-- NATATION -->
             <a href="natation.html" class="sport-card">
-    <div class="sport-icon">🏊</div>
-    <h3>Natation</h3>
-    <p>Équipements et accessoires dédiés à la natation.</p>
-</a>
+                <div class="sport-icon">🏊</div>
+                <h3>Natation</h3>
+                <p>
+                    Équipements et accessoires dédiés à la natation.
+                </p>
+            </a>
 
 
-            <!-- SPORTS DE COMBAT -->
-           <a href="sport-combat.html" class="sport-card">
-    <div class="sport-icon">🥊</div>
-    <h3>Sport Combat</h3>
-    <p>Gants, bandages, protège-tibias et équipements de combat.</p>
-</a>
+            <!-- SPORT COMBAT -->
+            <a href="sport-combat.html" class="sport-card">
+                <div class="sport-icon">🥊</div>
+                <h3>Sport Combat</h3>
+                <p>
+                    Gants, bandages, protège-tibias et équipements de combat.
+                </p>
+            </a>
 
 
             <!-- FITNESS -->
-           <a href="fitness.html" class="sport-card">
-    <div class="sport-icon">🏋️</div>
-    <h3>Fitness</h3>
-    <p>Équipements et accessoires pour le fitness et la musculation.</p>
-</a>
+            <a href="fitness.html" class="sport-card">
+                <div class="sport-icon">🏋️</div>
+                <h3>Fitness</h3>
+                <p>
+                    Équipements et accessoires pour le fitness et la musculation.
+                </p>
+            </a>
+
+
+            <!-- BALLONS -->
+            <a href="ballon.html" class="sport-card">
+                <div class="sport-icon">🏀</div>
+                <h3>Ballons</h3>
+                <p>
+                    Ballons et équipements pour différents sports.
+                </p>
+            </a>
 
 
             <!-- DIVERS -->
             <div class="sport-card">
-
                 <div class="sport-icon">🛍️</div>
-
                 <h3>Matériel sportif divers</h3>
-
                 <p>
                     Une sélection d'articles et
                     d'accessoires pour différents sports.
                 </p>
-
             </div>
-
 
         </div>
 
@@ -316,13 +411,122 @@
 
 
     <!-- FOOTER -->
-    <footer id="contact">
+    <footer>
 
         <p>
             © 2026 WIN SPORT — Tous droits réservés.
         </p>
 
     </footer>
+
+
+    <!-- SEARCH SCRIPT -->
+    <script>
+
+        const searchInput = document.getElementById("searchInput");
+        const searchResults = document.getElementById("searchResults");
+
+        /*
+            منتجات الموقع الحالية
+            نزيدو هنا المنتجات الجديدة مستقبلاً
+        */
+
+        const products = [
+
+            {
+                name: "Ballon Select",
+                category: "Ballons",
+                page: "ballon.html"
+            },
+
+            {
+                name: "Ballon Hummel",
+                category: "Ballons",
+                page: "ballon.html"
+            },
+
+            {
+                name: "Football",
+                category: "Football",
+                page: "football.html"
+            },
+
+            {
+                name: "Fitness",
+                category: "Fitness",
+                page: "fitness.html"
+            },
+
+            {
+                name: "Natation",
+                category: "Natation",
+                page: "natation.html"
+            },
+
+            {
+                name: "Sport Combat",
+                category: "Sport Combat",
+                page: "sport-combat.html"
+            }
+
+        ];
+
+
+        searchInput.addEventListener("input", function () {
+
+            const search = this.value.toLowerCase().trim();
+
+            searchResults.innerHTML = "";
+
+            if (search === "") {
+                searchResults.style.display = "none";
+                return;
+            }
+
+
+            const results = products.filter(product =>
+                product.name.toLowerCase().includes(search) ||
+                product.category.toLowerCase().includes(search)
+            );
+
+
+            if (results.length === 0) {
+
+                searchResults.innerHTML = `
+                    <div class="search-result">
+                        Aucun produit trouvé.
+                    </div>
+                `;
+
+            } else {
+
+                results.forEach(product => {
+
+                    searchResults.innerHTML += `
+                        <a
+                            href="${product.page}"
+                            class="search-result"
+                        >
+                            <div class="result-name">
+                                ${product.name}
+                            </div>
+
+                            <div class="result-category">
+                                ${product.category}
+                            </div>
+                        </a>
+                    `;
+
+                });
+
+            }
+
+
+            searchResults.style.display = "block";
+
+        });
+
+    </script>
 
 </body>
 </html>
